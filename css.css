@@ -9,7 +9,7 @@
 
 * {
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -63,13 +63,8 @@ footer {
     color: white;
 }
 
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-}
+
+
 
 
  ul{
@@ -135,4 +130,26 @@ font-size: 20px;
     content: "";
     clear: both;
     display: table;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .img1 {
+        border-radius: 0%;
+        width:0%;
+
+    }
+    .listText{
+      font-size: 12px;
+    }
+    .topSector{
+      background-image: url("image.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
 }
